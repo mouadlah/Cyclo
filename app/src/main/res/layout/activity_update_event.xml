@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEvent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/idAge"
+            android:layout_width="368dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Age"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idCapacity"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Capacity"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idLocation"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Location"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Pace"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Pace"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".UpdateCourse">
+
+
+            <EditText
+                android:id="@+id/Level"
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Level"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupEventTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Event" />
+
+                <RadioButton
+                    android:id="@+id/btnTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TimeTrial" />
+
+                <RadioButton
+                    android:id="@+id/btnHC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hill Climb" />
+
+                <RadioButton
+                    android:id="@+id/btnRSR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Road Stage Race" />
+
+                <RadioButton
+                    android:id="@+id/BTNrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RoadRace" />
+
+                <RadioButton
+                    android:id="@+id/btnGR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GroupRides" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/BtnUpdateEventDetails"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Update Event Details"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

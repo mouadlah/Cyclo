@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_gradient"
+    tools:context=".club_profile">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="391dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="672dp"
+        android:gravity="center"
+        android:text="Complete your club profile"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="401dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Name of main contact"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="401dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/contactName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Phone Number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/instagram"
+        android:layout_width="401dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/number"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Instagram Link"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:focusable="false"
+        android:hint="Date of Fundation"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="401dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/date"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Club Name"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="133dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/contactName"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="538dp"
+        android:background="@drawable/dark_gradient"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_choose_image"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Upload Logo"
+        android:textSize="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Save"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

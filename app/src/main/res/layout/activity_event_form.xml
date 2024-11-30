@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:layout_marginTop="8dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCity"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPhoneNumber"
+        android:layout_marginTop="8dp"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/textViewTShirtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T-shirt Size:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTShirtSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTShirtSize"
+        android:layout_marginTop="8dp"
+        android:entries="@array/tshirt_sizes"/>
+
+
+    <TextView
+        android:id="@+id/textViewParticipation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you ever participated in a cycling event before?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/spinnerTShirtSize"
+        android:layout_marginTop="16dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupParticipation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewParticipation"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupParticipation"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+</RelativeLayout>

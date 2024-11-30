@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94636770438",
+    "project_id": "cyclo-a329d",
+    "storage_bucket": "cyclo-a329d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94636770438:android:9b050f798462695a1abd07",
+        "android_client_info": {
+          "package_name": "com.example.main_activity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3smcEqg0NGZGEk7_-y5T2ltuu2Fm4Mj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
